@@ -23,10 +23,10 @@ public class CpfGenerateService {
     }
     private int calculateVerifierDigit(int[] cpf, int weight) {
         int sum = 0;
-        for(int i=0;i < weight - 1; i++){
+        for (int i = 0; i < weight - 1; i++) {
             sum += cpf[i] * weight--;
         }
         int remainder = sum % 11;
-        return(remainder < 2) ? 0 : 11 - remainder;
+        return (remainder < 2) ? 0 : 11 - remainder;
     }
 }
