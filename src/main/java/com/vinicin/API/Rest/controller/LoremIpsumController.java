@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController()
 @RequestMapping("/api")
-public class LoremIpsumController {
+public class    LoremIpsumController {
     private final LoremIpsumService loremIpsumService;
 
     public LoremIpsumController(LoremIpsumService loremIpsumService) {
