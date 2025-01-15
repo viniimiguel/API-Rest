@@ -15,7 +15,11 @@ public class CpfGenerate {
         this.cpfGenerateService = cpfGenerateService;
     }
     @GetMapping("/generate-fake-cpf")
-    public String generateCpf(){
-        return cpfGenerateService.generateCpf();
+    public String generateFakeCpf(){
+        return cpfGenerateService.generateFakeCpf();
+    }
+    @GetMapping("/generate-true-cpf")
+    public String generateTrueCpf(){
+        return cpfGenerateService.generateValidCpf();
     }
 }
