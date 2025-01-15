@@ -7,13 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/cpf")
-public class CpfGenerate {
+public class GenerateCpfController {
 
     private final CpfGenerateService cpfGenerateService;
 
-    public CpfGenerate(CpfGenerateService cpfGenerateService) {
+
+    public GenerateCpfController(CpfGenerateService cpfGenerateService) {
         this.cpfGenerateService = cpfGenerateService;
     }
+
     @GetMapping("/generate-fake-cpf")
     public String generateFakeCpf(){
         return cpfGenerateService.generateFakeCpf();
