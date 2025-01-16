@@ -7,7 +7,11 @@ public class BinaryCalculatorService {
 
     public int binaryCalculator(int binary){
         String binaryString = String.valueOf(binary);
-        int binaryNumberSize = binaryString.length();
-        return binaryNumberSize;
+        String reversedBinary = new StringBuilder(binaryString).reverse().toString();
+        int binaryNumberSize = reversedBinary.length();
+        int binaryNumber = Integer.parseInt(reversedBinary);
+        System.out.print(reversedBinary);
+
+        return binaryNumber;
     }
 }
