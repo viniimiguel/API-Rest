@@ -11,7 +11,6 @@ public class GenerateCpfController {
 
     private final CpfGenerateService cpfGenerateService;
 
-
     public GenerateCpfController(CpfGenerateService cpfGenerateService) {
         this.cpfGenerateService = cpfGenerateService;
     }
