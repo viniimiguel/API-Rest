@@ -3,9 +3,19 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "interfaceAPI": {
+    "interfaceGrafica": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/interface-api",
+            "outputPath": "dist/interface-grafica",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -27,14 +37,10 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -64,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "interfaceAPI:build:production"
+              "buildTarget": "interfaceGrafica:build:production"
             },
             "development": {
-              "buildTarget": "interfaceAPI:build:development"
+              "buildTarget": "interfaceGrafica:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -99,6 +105,6 @@
     }
   },
   "cli": {
-    "analytics": "347c9144-d13d-4189-bfb2-d272fd85f751"
+    "analytics": "e723f735-62aa-43b8-b122-b8a2c6d718e1"
   }
 }
