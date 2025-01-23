@@ -1,6 +1,6 @@
-package com.vinicin.API.Rest.controller;
+package com.vinicin.API.Rest.controller.generates;
 
-import com.vinicin.API.Rest.service.LoremIpsumService;
+import com.vinicin.API.Rest.service.generates.LoremIpsumService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

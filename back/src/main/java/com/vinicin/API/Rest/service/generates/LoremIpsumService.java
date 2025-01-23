@@ -1,4 +1,4 @@
-package com.vinicin.API.Rest.service;
+package com.vinicin.API.Rest.service.generates;
 
 import org.springframework.stereotype.Service;
 import java.util.Arrays;
