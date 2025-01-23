@@ -1,0 +1,12 @@
+.main-container{
+  background: linear-gradient(135deg, #121212, #2c2c2c);
+}
+
+a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #81c784;
+}
