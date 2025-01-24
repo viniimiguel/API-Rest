@@ -8,16 +8,6 @@ public class CpfGenerateService {
 
     private final Random random = new Random();
 
-    public String generateFakeCpf() {
-        int[] cpf = new int[11];
-
-        for (int i = 0; i < 11; i++) {
-            cpf[i] = random.nextInt(10);
-        }
-
-        return formatCpf(cpf);
-    }
-
     public String generateValidCpf() {
         int[] cpf = new int[11];
 

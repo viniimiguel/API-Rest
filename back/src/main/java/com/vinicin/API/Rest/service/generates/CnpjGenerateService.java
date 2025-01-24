@@ -26,8 +26,8 @@ public class CnpjGenerateService {
         for (int i = 0; i < weight.length; i++){
             sum += cnpj[i] * weight[i];
         }
-        int remains = sum % 11;
-        return (remains < 2) ? 0 : 11 - remains;
+        int remainder = sum % 11;
+        return (remainder < 2) ? 0 : 11 - remainder;
     }
 }
 

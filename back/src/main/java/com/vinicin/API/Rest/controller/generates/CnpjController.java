@@ -14,7 +14,7 @@ public class CnpjController {
         this.cnpjGenerateService = cnpjGenerateService;
     }
 
-    @GetMapping("generate/cnpj")
+    @GetMapping("/generate")
     public String generateCnpj() {
         return cnpjGenerateService.generateCnpj();
     }
