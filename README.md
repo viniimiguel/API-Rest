@@ -1,1 +1,2 @@
-Projeto usando java e angular irei atualizar este read-me embreve.
+Projeto Gerador de Dados Mock - 4Devs Inspired
+Este projeto é uma aplicação web inspirada no 4Devs, desenvolvida com Angular no frontend e Java no backend. Ele permite que desenvolvedores gerem dados mock (fictícios) para uso em testes e desenvolvimento de software. A aplicação oferece uma interface amigável para gerar diversos tipos de dados, como nomes, endereços, números de telefone, CPFs, e muito mais.
