@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './_components/navbar/navbar.component';
 import { FooterComponent } from './_components/footer/footer.component';
 import { SidebarComponent } from './_components/sidebar/sidebar.component';
+import { CpfGenerateComponent } from './cpf-generate/cpf-generate.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +15,14 @@ import { SidebarComponent } from './_components/sidebar/sidebar.component';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    CpfGenerateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, CpfGenerateComponent]
 })
 export class AppModule { }
