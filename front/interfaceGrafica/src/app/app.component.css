@@ -2,7 +2,8 @@
   text-align: center;
   padding: 20px;
   background: linear-gradient(135deg, #2c2c2c, #3a4a5a);
-  height: 100vh;
+  min-height: 100vh;
   border-radius: 15px;
   color: #fff;
+  box-sizing: border-box;
 }

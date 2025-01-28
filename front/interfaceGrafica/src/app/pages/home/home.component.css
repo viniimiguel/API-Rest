@@ -18,16 +18,23 @@ h2{
 }
 
 .grid-item {
-  background: #2c2c2c;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.3);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), 0 0 20px rgba(58, 74, 90, 0.8);
+  background: linear-gradient(135deg, #2c2c2c, #3a4a5a);
 }
 
 .grid-item img {
-  min-width: 100%;
-  min-height: 100%;
+  max-width: 500px;
+  max-height: 130px;
   border-radius: 10px;
   margin-bottom: 10px;
 }

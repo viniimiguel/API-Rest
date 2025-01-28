@@ -1,6 +1,10 @@
 .sidebar{
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
 }
+.nav-item{
+  cursor: pointer;
+}
+
